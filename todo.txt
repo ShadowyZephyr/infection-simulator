@@ -1,0 +1,20 @@
+Menu
+-----
+Pause/Play Button - DONE
+Restart Button - DONE
+Info Menu - DONE
+Settings (change variables) - DONE
+Statistics - DONE
+(maybe) Add graph to statistics
+
+Features 
+----------
+Basic Implementation - DONE
+Timer - DONE
+Duration - DONE
+Vaccination
+Doctors - DONE
+Doctor Trust
+Dropdown options in settings (ex. doctors being random or same amount)
+Quarantine
+Click on People to Edit

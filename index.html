@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Infection Simulator</title>
+        <script src="/infection-simulator/pixi.min.js"></script>
+        <script type="module" src="/infection-simulator/index.js" ></script>
+        <link rel="stylesheet" href="/infection-simulator/styles.css">
+        <script type="text/javascript" src="/infection-simulator/drag.js"></script> 
+        <script type="module" src="/infection-simulator/stats.js"></script> 
+    </head>
+    <body>
+        <div id="settings" style="width: 25rem;">
+            <button onclick="x('settings')">Close</button>  
+            <h3>Settings</h3>
+            <p>Sprite Size (Visual): <input id="sprite_size"></p>
+            <p>Simulation Speed: <input id="tpf"></p>
+            <p>Person Speed: <input id="speed"></p>
+            <p>Population: <input id="population"></p>
+            <p>Initial Sick Chance: <input id="initial_sick"></p>
+            <p>Infection Radius: <input id="infection_radius"></p>
+            <p>Virus Duration (0=Unlimited): <input id="duration"></p>
+            <p>Initial Doctor Chance: <input id="initial_doctors"></p>
+            <p>Heal Radius: <input id="heal_radius"></p>
+            <button id="apply">Apply Settings</button>
+        </div>
+        <div id="info" style="width: 25rem;">
+            <button onclick="x('info')">Close</button>
+            <h3>Info</h3>
+            <p>This is a virus infection simulator, why not</p>
+            <h3>Hotkeys</h3>
+            <p>Space: Pause/Play<br>R: Restart<br>I: Info<br>S: Settings<br>A: Apply Settings<br>D: Statistics<br> T: Step 1 Tick<br>Y: Step 10 Ticks</bt></p>
+            <h3>Settings</h3>
+            <p>In the settings are all the parameters that change the simulation. You need to click "Apply settings" or press A for any changes you make to take effect.</p>
+            <p>Game Speed, Infection Radius, and Heal Radius apply instantly, the others apply when the next run is started.</p>
+            <p>Changing settings other than Simulation Speed or Sprite Size resets the statistics.</p>
+        </div>
+        <div id="stats" style="width: 15rem;">
+            <button onclick="x('stats')">Close</button>
+            <h2>Statistics</h2>
+            <h3 id="eradicated">Eradicated</h3>
+            <p id="min_eradicated"></p>
+            <p id="max_eradicated"></p>
+            <p id="mean_eradicated"></p>
+            <p id="median_eradicated"></p>
+            <p id="stdev_eradicated"></p>
+            <h3 id="infected">Infected All</h3>
+            <p id="min_infected"></p>
+            <p id="max_infected"></p>
+            <p id="mean_infected"></p>
+            <p id="median_infected"></p>
+            <p id="stdev_infected"></p>
+        </div>
+    </body>
+</html>
