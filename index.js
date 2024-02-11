@@ -362,7 +362,6 @@ function infect(me) {
     sicks++;
     if(!isDoctor(me)) {
         infected++;
-        console.log(infected);
     }
     if(params.duration) {
         me.timer = params.duration;
@@ -393,7 +392,6 @@ function makeHealthy(me) {
     sicks--;
     if(!isDoctor(me)) {
         infected--;
-        console.log(infected);
     }
 }
 function isInfected(me) {
